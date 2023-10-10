@@ -14,7 +14,6 @@ export default createStore({
     },
     addNewUser(state, user) {
       state.users.unshift(user);
-      console.log(state.users);
     },
   },
   actions: {
@@ -25,7 +24,6 @@ export default createStore({
     },
     addNewUser({ commit }, _user) {
       commit("addNewUser", _user);
-      console.log(_user);
     },
   },
 });
