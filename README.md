@@ -5,6 +5,12 @@
 npm install
 ```
 
+### Dependencies for this project
+```
+npm install axios
+npm install primeicons
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
