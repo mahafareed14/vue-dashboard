@@ -41,7 +41,7 @@
               <span class="link">GitHub</span>
             </a>
           </li>
-          <li class="list">
+          <li class="list" @click="selectedTask('Settings')">
             <a href="#" class="nav-link">
               <i class="pi pi-cog"></i>
               <span class="link">Settings</span>

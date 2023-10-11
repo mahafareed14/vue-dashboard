@@ -22,7 +22,7 @@ export default {
   name: "DashboardCard",
   props: {
     text: String,
-    number: String,
+    number: Number,
   },
   components: {
     Vue3Autocounter,
