@@ -87,7 +87,7 @@ export default {
 .chart {
   height: 500px;
   width: 500px;
-  margin-top: 99px;
+  margin-top: 10px;
   margin-left: 300px;
 }
 </style>

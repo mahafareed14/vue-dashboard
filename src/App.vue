@@ -1,13 +1,12 @@
 <template>
   <nav>
-    <router-link to="/">Dashboard</router-link> |
+    <router-link to="/">DashBoard</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
   <router-view />
 </template>
 
 <style>
-@import "primeicons/primeicons.css";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -17,15 +16,16 @@
 }
 
 nav {
-  padding: 0px;
+  padding: 30px;
+  text-align: right;
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: black;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: lightblue;
 }
 </style>

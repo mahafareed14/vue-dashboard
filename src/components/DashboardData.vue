@@ -14,7 +14,7 @@
       :number="totalusers_samecity"
       style="margin-top: -259px; margin-left: 1009px"
     ></DashboardCard>
-    <DashBoardChart v-if="$store.state.users.length > 0"></DashBoardChart>
+    <DashBoardChart></DashBoardChart>
   </div>
 </template>
 
@@ -74,7 +74,7 @@ export default {
 
       // Getting all the cities.
       users.forEach((user) => {
-        if (totalCities.indexOf(user.city) === -1) totalCities.push(user.city);
+        if (totalCities.indexOf(user.city) == -1) totalCities.push(user.city);
       });
       if (totalCities.length === users.length) return;
 

@@ -6,7 +6,6 @@
     ></UsersList>
     <AddNewUser v-if="selectedTask == 'Add User'"></AddNewUser>
     <DashboardData v-if="selectedTask == 'Dashboard'"></DashboardData>
-    <DashBoardChart v-if="selectedTask == 'Settings'"></DashBoardChart>
   </div>
 </template>
 
@@ -15,7 +14,6 @@ import SideBar from "./SideBar.vue";
 import UsersList from "./UsersList.vue";
 import AddNewUser from "./AddNewUser.vue";
 import DashboardData from "./DashboardData.vue";
-import DashBoardChart from "./DashboardChart.vue";
 export default {
   name: "DashBoard",
   data: () => ({
@@ -26,7 +24,6 @@ export default {
     UsersList,
     AddNewUser,
     DashboardData,
-    DashBoardChart,
   },
   mounted() {
     this.$store.dispatch("loadUsers");

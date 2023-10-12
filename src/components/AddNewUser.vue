@@ -11,6 +11,9 @@ export default {
   }),
   methods: {
     addUser() {
+      this.payload.postalcode = this.payload.postalcode.toUpperCase();
+      let city = this.payload.city;
+      this.payload.city = city.charAt(0).toUpperCase() + city.slice(1);
       this.$store.dispatch("addNewUser", this.payload);
       this.payload = {
         name: "",
